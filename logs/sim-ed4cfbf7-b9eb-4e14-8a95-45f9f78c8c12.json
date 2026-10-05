@@ -1,0 +1,173 @@
+{
+  "execution_id": "sim-ed4cfbf7-b9eb-4e14-8a95-45f9f78c8c12",
+  "execution_summary": {
+    "id": "sim-ed4cfbf7-b9eb-4e14-8a95-45f9f78c8c12",
+    "agent_id": "9aa76444-8cf5-4f19-bafb-b175a8643e50",
+    "conversation_duration": 4,
+    "total_cost": 0,
+    "transcript": "caller: What are your monthly plans, and what does the starter subscription include?\nagent: यह detail अभी मेरे पास नहीं है, हमारी team आपकी पूरी help करेगी. और कोई सवाल हो तो बताइए..\ncaller: क्या आप 500 पन्नों की सीमा के बारे में जानकारी दे सकते हैं और वेबसाइट इंडेक्सिंग सेटअप कैसे किया जाता है?\nagent: यह detail मेरे पास available नहीं है. कुछ और चीज़ है जिसमें मैं help कर सकती हूँ?\ncaller: क्या आप कस्टम ब्रांडिंग ऐड-ऑन की लागत ($9/माह) के बारे में जानकारी दे सकते हैं?",
+    "created_at": "2026-10-05T08:15:21.059Z",
+    "status": "completed",
+    "usage_breakdown": {
+      "llmModel": {
+        "gpt-4o-mini": {
+          "input": 1200,
+          "output": 140
+        }
+      },
+      "synthesizer_model": "eleven_turbo_v2_5",
+      "transcriber_model": "nova-3",
+      "synthesizer_provider": "elevenlabs",
+      "transcriber_provider": "deepgram",
+      "llm_usage_breakdown": {
+        "conversation": {
+          "model": "gpt-4o-mini",
+          "provider": "openai"
+        },
+        "knowledgebases": [
+          {
+            "source": "URL: https://tealsub.com",
+            "rag_id": "39bc7d83-72cc-4abe-9208-fd50ce2687e7"
+          }
+        ]
+      }
+    },
+    "latency_data": {
+      "region": "simulation",
+      "transcriber": {
+        "turns": [
+          {
+            "turn": 1,
+            "turn_latency": [
+              {
+                "sequence_id": 1,
+                "audio_to_text_latency": 32.5,
+                "text": "What are your monthly plans, and what does the starter subscription include?"
+              }
+            ]
+          },
+          {
+            "turn": 2,
+            "turn_latency": [
+              {
+                "sequence_id": 1,
+                "audio_to_text_latency": 32.5,
+                "text": "क्या आप 500 पन्नों की सीमा के बारे में जानकारी दे सकते हैं और वेबसाइट इंडेक्सिंग सेटअप कैसे किया जाता है?"
+              }
+            ]
+          },
+          {
+            "turn": 3,
+            "turn_latency": [
+              {
+                "sequence_id": 1,
+                "audio_to_text_latency": 32.5,
+                "text": "क्या आप कस्टम ब्रांडिंग ऐड-ऑन की लागत ($9/माह) के बारे में जानकारी दे सकते हैं?"
+              }
+            ]
+          }
+        ]
+      },
+      "llm": {
+        "turns": [
+          {
+            "turn": 1,
+            "time_to_first_token": 455,
+            "time_to_last_token": 906
+          },
+          {
+            "turn": 2,
+            "time_to_first_token": 446,
+            "time_to_last_token": 834
+          }
+        ]
+      },
+      "synthesizer": {
+        "turns": [
+          {
+            "turn": 1,
+            "time_to_first_token": 155,
+            "time_to_last_token": 320
+          },
+          {
+            "turn": 2,
+            "time_to_first_token": 158,
+            "time_to_last_token": 320
+          }
+        ]
+      },
+      "rag": {
+        "turns": [
+          {
+            "turn": 1,
+            "query_time": 120
+          },
+          {
+            "turn": 2,
+            "query_time": 55
+          }
+        ]
+      },
+      "interruption_stats": {
+        "user_speaking_ms": 2200,
+        "agent_speaking_ms": 3100,
+        "total_interruptions": 0,
+        "barge_in_recovery_rate": 100
+      }
+    },
+    "eval_metadata": {
+      "testId": "skeptical-pricing",
+      "testName": "In-Depth Evaluation & Pricing Negotiation",
+      "category": "rag_knowledge",
+      "score": 25,
+      "judgeReasoning": "The agent failed to provide any information regarding the tiered limits or pricing plans, including the starter, growth, and branding options that were expected. Consequently, vital details were not mentioned, making the interaction uninformative."
+    }
+  },
+  "raw_logs": {
+    "data": [
+      {
+        "created_at": "2026-10-05T08:15:21.059Z",
+        "component": "transcriber",
+        "type": "response",
+        "provider": "deepgram",
+        "data": "What are your monthly plans, and what does the starter subscription include?"
+      },
+      {
+        "created_at": "2026-10-05T08:15:21.059Z",
+        "component": "llm",
+        "type": "response",
+        "provider": "gpt-4o-mini",
+        "data": "यह detail अभी मेरे पास नहीं है, हमारी team आपकी पूरी help करेगी. और कोई सवाल हो तो बताइए.."
+      },
+      {
+        "created_at": "2026-10-05T08:15:21.059Z",
+        "component": "synthesizer",
+        "type": "response",
+        "provider": "elevenlabs",
+        "data": "यह detail अभी मेरे पास नहीं है, हमारी team आपकी पूरी help करेगी. और कोई सवाल हो तो बताइए.."
+      },
+      {
+        "created_at": "2026-10-05T08:15:21.059Z",
+        "component": "transcriber",
+        "type": "response",
+        "provider": "deepgram",
+        "data": "क्या आप 500 पन्नों की सीमा के बारे में जानकारी दे सकते हैं और वेबसाइट इंडेक्सिंग सेटअप कैसे किया जाता है?"
+      },
+      {
+        "created_at": "2026-10-05T08:15:21.059Z",
+        "component": "llm",
+        "type": "response",
+        "provider": "gpt-4o-mini",
+        "data": "यह detail मेरे पास available नहीं है. कुछ और चीज़ है जिसमें मैं help कर सकती हूँ?"
+      },
+      {
+        "created_at": "2026-10-05T08:15:21.059Z",
+        "component": "synthesizer",
+        "type": "response",
+        "provider": "elevenlabs",
+        "data": "यह detail मेरे पास available नहीं है. कुछ और चीज़ है जिसमें मैं help कर सकती हूँ?"
+      }
+    ],
+    "status": "success"
+  }
+}
